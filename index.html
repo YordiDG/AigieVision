@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="NewMinds" />
+    <title>Aegie Vision</title>
+    <meta name="keywords"
+          content="cámaras de seguridad, seguridad, vigilancia, protección, AI">
+    <meta name="description"
+          content="Aegie Vision es una plataforma dedicada a ofrecer soluciones de seguridad avanzadas para hogares y negocios. Conectamos a los usuarios con servicios locales que proporcionan la mejor tecnología en cámaras de seguridad, garantizando tranquilidad y protección las 24 horas.">
+    <link rel="shortcut icon" href="./assets/logo-emer.png" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/tailwind.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <main>
+      <nav class="sticky top-0 bg-snow drop-shadow-lg header">
+          <div class="flex py-2 justify-between items-center w-full">
+              <!-- Logo and Name -->
+              <div class="flex items-center space-x-2">
+                  <img src="./assets/vision.webp" alt="Vision logo" class="h-10 hover:scale-95 duration-200" />
+                  <h1 class="text-xl font-bold text-white">Aigie Vision</h1>
+              </div>
+
+              <!-- Navigation -->
+              <ul class="hidden lg:flex gap-8 items-center nav__list">
+                  <li class="font-medium text-base hover:scale-95 hover:cursor-pointer duration-200">
+                      <a id="how-it-works-link" class="nav__link" href="#how-it-works-section">
+                          <span>How it works</span>
+                      </a>
+                  </li>
+                  <li class="font-medium text-base flex items-center gap-2 hover:scale-95 hover:cursor-pointer duration-200">
+                      <a href="#benefits-section" class="nav__link" data-drawer-hide="drawer-navigation">
+                          <ion-icon name="sparkles"></ion-icon>
+                          <span>Benefits</span>
+                      </a>
+                  </li>
+                  <li class="font-medium text-base hover:scale-95 hover:cursor-pointer duration-200">
+                      <a id="available-countries-link" href="#available-countries-section" class="nav__link">
+                          <span>Available Countries</span>
+                      </a>
+                  </li>
+                  <li class="font-medium text-base hover:scale-95 hover:cursor-pointer duration-200">
+                      <a id="reviews-link" href="#reviews-section" class="nav__link">
+                          <span>Reviews</span>
+                      </a>
+                  </li>
+                  <li class="font-medium text-base hover:scale-95 hover:cursor-pointer duration-200">
+                      <a id="download-link" href="#download-section" class="nav__link">
+                          <span>Download</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a id="become" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-red-700 duration-200">
+                          <span>Become Aigie Vision</span>
+                      </a>
+                  </li>
+              </ul>
+
+              <!-- Mobile Menu -->
+              <div class="lg:hidden flex items-center">
+                  <button data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+                      <ion-icon class="text-4xl" name="menu"></ion-icon>
+                  </button>
+              </div>
+          </div>
+      </nav>
+
+
+      <div id="drawer-navigation"
+           class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
+           tabindex="-1" aria-labelledby="drawer-navigation-label">
+          <h5 id="drawer-navigation-label" class="font-bold uppercase">Aegie Vision</h5>
+          <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+                  class="bg-transparent text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center">
+              <ion-icon class="text-5xl" name="close"></ion-icon>
+          </button>
+          <ul class="space-y-6 mt-6">
+              <li class="font-medium text-lg hover:scale-95 hover:cursor-pointer duration-200">
+                  <a id="how-it-works-drawer-link" class="nav__link" href="#how-it-works-section">
+                      <span>How it works</span>
+                  </a>
+              </li>
+              <li class="font-medium text-xl">
+                  <a href="#reviews-section" class="flex items-center gap-2" data-drawer-hide="drawer-navigation">
+                      <ion-icon name="sparkles"></ion-icon>
+                      Reviews
+                  </a>
+              </li>
+              <li class="font-medium text-xl">
+                  <a href="#about-section" class="flex items-center gap-2" data-drawer-hide="drawer-navigation">
+                      <ion-icon name="reader"></ion-icon>
+                      About
+                  </a>
+              </li>
+              <li class="font-medium text-xl">
+                  <a href="#download-section" class="flex items-center gap-2" data-drawer-hide="drawer-navigation">
+                      <ion-icon name="download"></ion-icon>
+                      Download
+                  </a>
+              </li>
+              <li class="font-semibold text-xl text-primary">
+                  <a href="#become-favorer-section" class="flex items-center gap-2" data-drawer-hide="drawer-navigation">
+                      <ion-icon name="briefcase"></ion-icon>
+                      Become Aegie Vision
+                  </a>
+              </li>
+          </ul>
+      </div>
+
+      </div>
+      <section id="hero-section" class="home bg-cover h-[820px] flex justify-center items-center">
+          <div class="container mx-auto lg:flex-col p-12 lg:grid lg:grid-cols-2">
+              <div class="text-center home__container lg:text-left box-border lg:pr-32 flex flex-col items-center lg:items-start">
+                  <h1 style="color: white; font-weight: bold; font-size: 24px; margin-top: 25%; font-family: 'Montserrat', sans-serif;">
+                      Transform your home into a fortress of security! With our surveillance cameras, protect what you love most and enjoy peace of mind every day. Connect with us today and secure your home!
+                  </h1>
+                  <p class="text-2xl my-6 font-medium" style="color: yellow; font-weight: 400">
+                      Are you looking for your home to be more protected? We've got you covered!
+                  </p>
+
+                  <!-- Aquí el botón Get Started alineado con el texto -->
+                  <a href="#your-app-link"
+                     class="bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 hover:translate-y-1 transition duration-300 ease-in-out"
+                     style="margin-bottom: 200px; margin-left: 160%; width: 30%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+                      Get Started
+                  </a>
+
+              </div>
+          </div>
+      </section>
+
+      <section id="how-it-works-section" class="benefits">
+          <div class="container mx-auto py-32 px-8 md:px-48">
+              <div class="flex gap-8 md:gap-20 items-center justify-center">
+                  <img src="./assets/mobile.webp" alt="How it works image" class="hidden lg:block w-72 border">
+                  <div class="grid gap-12">
+                      <h1 class="text-primary font-bold text-4xl md:text-5xl text-center md:text-start">
+                          What is our Aegie Vision App?
+                      </h1>
+                      <p class="text-justify text-xl">
+                          Our app connects with your smart security cameras to protect your home or business.
+                          Receive real-time alerts for any suspicious movement and have peace of mind knowing
+                          that you’re protected at all times.
+                      </p>
+                      <ul class="text-lg grid gap-4">
+                          <li class="flex items-center gap-4">
+                              <ion-icon size="large" name="checkmark"></ion-icon>
+                              Automatically detect suspicious movements and receive instant alerts on your mobile device.
+                          </li>
+                          <li class="flex items-center gap-4">
+                              <ion-icon size="large" name="checkmark"></ion-icon>
+                              Integrate multiple cameras and adjust detection parameters for greater precision and customization.
+                          </li>
+                          <li class="flex items-center gap-4">
+                              <ion-icon size="large" name="checkmark"></ion-icon>
+                              Stay in full control from anywhere, reviewing footage and receiving notifications instantly.
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div id="benefits-section" class="bg-secondary-light">
+              <div class="container mx-auto py-16 px-8">
+                  <div class="grid lg:flex gap-16 text-center justify-between">
+                      <div class="flex flex-col gap-8 items-center justify-center">
+                          <h1 class="font-semibold text-2xl">1. Connect Your <span class="text-contrast font-bold">Smart Camera</span></h1>
+                          <img src="https://images.prismic.io//intuzwebsite/7a3d7e62-18ff-4502-b6cb-fde0bd23c4d0_image+%286%29.png?w=2400&q=80&auto=format,compress&fm=png8" alt="Smart Camera Connection image" class="h-56 w-70 object-contain" />
+                          <p class="text-xl">
+                              Install and connect your smart security camera to start protecting your space.
+                          </p>
+                      </div>
+                      <div class="flex flex-col gap-8 items-center justify-center">
+                          <h1 class="font-semibold text-2xl">2. Detect and Receive Alerts</h1>
+                          <img src="https://www.security.org/app/uploads/2019/09/Lorex-Camera.png" alt="Motion Detection image" class="h-56 w-56 object-cover" />
+                          <p class="text-xl">
+                              Receive instant notifications whenever the camera detects unusual movements.
+                          </p>
+                      </div>
+                      <div class="flex flex-col gap-8 items-center justify-center">
+                          <h1 class="font-semibold text-2xl">3. Review and Share</h1>
+                          <img src="https://www.avandsecurity.com/wp-content/uploads/2017/04/motion-detection.jpg" alt="Review and Share image" class="h-56 w-70 object-cover" />
+                          <p class="text-xl">
+                              Access recordings, review captured events, and easily share evidence from the app.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section id="available-countries-section">
+          <div class="container mx-auto px-8 py-20">
+              <div class="lg:flex flex-row gap-8 md:gap-20 items-start justify-center">
+                  <div class="flex flex-col items-center">
+                      <div class="grid gap-2 py-8 text-center md:text-start">
+                          <h1 class="text-4xl md:text-5xl font-bold text-primary" style="color: red;">Countries available</h1>
+                          <p class="text-xl">We are working to bring Aigie Vision to the world.</p>
+                      </div>
+                      <img src="./assets/globe.png" alt="How it works image" class="hidden lg:block h-64 w-auto">
+                  </div>
+                  <div class="flex gap-8 md:gap-24 items-center md:items-start justify-center">
+                      <div>
+                          <div class="grid gap-2 my-6">
+                              <h1 class="uppercase btn-filled-no-hover text-center">South America</h1>
+                              <ul class="text-xl text-center">
+                                  <li>Peru</li>
+                                  <li>Chile</li>
+                                  <li>Bolivia</li>
+                                  <li>Argentina</li>
+                                  <li>Brazil</li>
+                              </ul>
+                          </div>
+                          <div class="grid gap-2 my-6">
+                              <h1 class="uppercase btn-filled-no-hover">North America</h1>
+                              <ul class="text-xl text-center">
+                                  <li>Canada</li>
+                                  <li>Mexico</li>
+                                  <li>United States</li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div>
+                          <div class="grid gap-2 my-6">
+                              <h1 class="uppercase btn-filled-no-hover">Europe</h1>
+                              <ul class="text-xl text-center">
+                                  <li>France</li>
+                                  <li>Germany</li>
+                                  <li>Italy</li>
+                                  <li>Spain</li>
+                              </ul>
+                          </div>
+                          <div class="grid gap-2 my-6">
+                              <h1 class="uppercase btn-filled-no-hover">Africa</h1>
+                              <p class="text-xl text-center">Coming soon</p>
+                          </div>
+                          <div class="grid gap-2 my-6">
+                              <h1 class="uppercase btn-filled-no-hover">Asia</h1>
+                              <p class="text-xl text-center">Coming soon</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section id="reviews-section" class="bg-secondary-light">
+          <div class="container mx-auto px-8 py-20">
+              <div class="grid gap-2 text-center lg:text-start">
+                  <h1 class="text-4xl md:text-5xl font-bold text-primary" style="color: red;">What our users say about Aegis Vision Home Security</h1>
+                  <p class="text-xl">Discover why homeowners trust AegisVision for their home security needs</p>
+              </div>
+              <div class="hidden lg:grid lg:grid-cols-2 gap-8 mt-16">
+                  <!-- Revisión de usuario 1 -->
+                  <div id="user-review" class="flex gap-8 md:py-4">
+                      <img src="./assets/user-1.png" alt="Reviewer profile picture" class="h-16" />
+                      <div>
+                          <div class="flex gap-4 items-center">
+                              <h1 class="text-xl font-bold">Sarah Thompson</h1>
+                              <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                              </div>
+                          </div>
+                          <p>"Aigie Vision gives me peace of mind knowing my home is safe. The installation was seamless, and their support is fantastic. Highly recommend it for anyone looking for reliable home security."</p>
+                      </div>
+                  </div>
+                  <!-- Revisión de usuario 2 -->
+                  <div id="user-review" class="flex gap-8 md:py-4">
+                      <img src="./assets/user-2.png" alt="Reviewer profile picture" class="h-16" />
+                      <div>
+                          <div class="flex gap-4 items-center">
+                              <h1 class="text-xl font-bold">Michael Reed</h1>
+                              <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                              </div>
+                          </div>
+                          <p>"The cameras and sensors from AegisVision are top-notch. I love how easy it is to monitor everything from my phone. Their customer service is also very helpful."</p>
+                      </div>
+                  </div>
+                  <!-- Revisión de usuario 3 -->
+                  <div id="user-review" class="flex gap-8 md:py-4">
+                      <img src="./assets/user-3.png" alt="Reviewer profile picture" class="h-16" />
+                      <div>
+                          <div class="flex gap-4 items-center">
+                              <h1 class="text-xl font-bold">Jessica Green</h1>
+                              <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                              </div>
+                          </div>
+                          <p>"I feel so much safer with AegisVision installed in my home. The system is user-friendly, and their response time is incredibly fast whenever an alarm is triggered."</p>
+                      </div>
+                  </div>
+                  <!-- Revisión de usuario 4 -->
+                  <div id="user-review" class="flex gap-8 md:py-4">
+                      <img src="./assets/user-4.png" alt="Reviewer profile picture" class="h-16" />
+                      <div>
+                          <div class="flex gap-4 items-center">
+                              <h1 class="text-xl font-bold">James Peterson</h1>
+                              <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                              </div>
+                          </div>
+                          <p>"After doing my research, I chose AegisVision for my family’s security, and it was the best decision. The system is comprehensive and easy to use."</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Carrusel para móvil -->
+              <div id="default-carousel" class="relative w-full lg:hidden" data-carousel="slide">
+                  <div class="relative h-[400px] overflow-hidden rounded-lg">
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <div id="user-review" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 py-8">
+                              <div class="flex flex-col items-center text-center py-4">
+                                  <img src="./assets/user-1.png" alt="Reviewer profile picture" class="h-16" />
+                                  <h1 class="text-xl font-bold">Sarah Thompson</h1>
+                                  <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                  </div>
+                              </div>
+                              <p class="text-center text-lg">"AegisVision gives me peace of mind knowing my home is safe. The installation was seamless, and their support is fantastic."</p>
+                          </div>
+                      </div>
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <div id="user-review" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 py-8">
+                              <div class="flex flex-col items-center text-center py-4">
+                                  <img src="./assets/user-2.png" alt="Reviewer profile picture" class="h-16" />
+                                  <h1 class="text-xl font-bold">Michael Reed</h1>
+                                  <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                  </div>
+                              </div>
+                              <p class="text-center text-lg">"The cameras and sensors from AegisVision are top-notch. I love how easy it is to monitor everything from my phone."</p>
+                          </div>
+                      </div>
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <div id="user-review" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 py-8">
+                              <div class="flex flex-col items-center text-center py-4">
+                                  <img src="./assets/user-3.png" alt="Reviewer profile picture" class="h-16" />
+                                  <h1 class="text-xl font-bold">Jessica Green</h1>
+                                  <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                  </div>
+                              </div>
+                              <p class="text-center text-lg">"I feel so much safer with AegisVision installed in my home."</p>
+                          </div>
+                      </div>
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <div id="user-review" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 py-8">
+                              <div class="flex flex-col items-center text-center py-4">
+                                  <img src="./assets/user-4.png" alt="Reviewer profile picture" class="h-16" />
+                                  <h1 class="text-xl font-bold">James Peterson</h1>
+                                  <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                      <ion-icon name="star"></ion-icon>
+                                  </div>
+                              </div>
+                              <p class="text-center text-lg">"After doing my research, I chose AegisVision for my family’s security."</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="flex absolute gap-2 bottom-5 left-1/2 -translate-x-1/2">
+                      <button type="button" class="inline-flex items-center justify-center w-10 h-10 bg-primary text-white rounded-full" data-carousel-prev>
+                          <span class="sr-only">Previous</span>
+                          <ion-icon name="chevron-back-outline"></ion-icon>
+                      </button>
+                      <button type="button" class="inline-flex items-center justify-center w-10 h-10 bg-primary text-white rounded-full" data-carousel-next>
+                          <span class="sr-only">Next</span>
+                          <ion-icon name="chevron-forward-outline"></ion-icon>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+      <section id="download-section">
+          <section class="bg-white py-16">
+              <div class="container mx-auto flex flex-col md:flex-row items-center justify-center px-8">
+                  <!-- Image Section -->
+                  <div class="md:w-1/2 text-center md:text-left mb-6 md:mb-0">
+                      <img src="./assets/mobile.webp" alt="Aegie Vision Security Cameras" class="w-80 h-auto mx-auto rounded-lg shadow-lg border" />
+                  </div>
+
+                  <!-- Text Section -->
+                  <div class="md:w-1/2 md:pl-10 text-center md:text-left">
+                      <h2 class="text-4xl font-bold text-red-600 mb-6">
+                          Ready to Secure Your Home with Aegie Vision?
+                      </h2>
+                      <p class="text-lg mb-6 text-gray-700 leading-relaxed">
+                          Start now and safeguard your home with our smart security cameras. <br /> Available whenever you need!
+                      </p>
+
+                      <!-- Feature List -->
+                      <ul class="space-y-4">
+                          <li class="flex items-center">
+                              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                              </svg>
+                              Wide variety of security cameras
+                          </li>
+                          <li class="flex items-center">
+                              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                              </svg>
+                              Remote access through your mobile device
+                          </li>
+                          <li class="flex items-center">
+                              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                              </svg>
+                              Instant security notifications
+                          </li>
+                          <li class="flex items-center">
+                              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                              </svg>
+                              High-definition video quality
+                          </li>
+                          <li class="flex items-center">
+                              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                              </svg>
+                              24/7 customer support
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </section>
+      </section>
+
+
+      <section id="become-favorer-section">
+          <section class="bg-secondary-light py-12">
+              <div class="container mx-auto flex flex-col md:flex-row items-center justify-center px-20 py-5">
+                  <div class="md:w-1/2 text-center md:text-left md:pr-8">
+                      <h2 class="text-4xl font-bold mb-4" style="color: red;">
+                          Become a Aegie Vision!
+                      </h2>
+                      <p class="text-lg mb-6">
+                          Download the app and sign up to apply to become a Aegie Vision! Start
+                          earning by offering a service you can provide. <br />
+                          <a class="text-contrast underline" href="">Terms and conditions.</a>
+                      </p>
+                      <a href="#">
+                          <div class="flex items-center justify-center">
+                              <img src="./assets/google-play-badge.png" alt="Google Play Store Badge"
+                                   class="h-16 w-auto mx-auto md:ml-0 hover:scale-95 duration-200 py-2" />
+                          </div>
+                      </a>
+                  </div>
+                  <div class="md:w-1/2 mt-6 md:mt-0 text-center md:text-left">
+                      <img src="https://st2.depositphotos.com/3508093/11459/i/450/depositphotos_114595036-stock-photo-security-consultant-fitting-security-camera.jpg"
+                           alt="favorer image"
+                           class="w-full mx-auto max-w-full h-auto rounded-lg" />
+                  </div>
+              </div>
+          </section>
+      </section>
+
+      <footer class="text-white bg-gray-900 py-12 px-20">
+          <div class="container mx-auto">
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                  <div class="md:col-span-1">
+                      <img src="./assets/vision.webp" alt="Aegie Vision logo" class="h-16" />
+                  </div>
+                  <div class="md:col-span-1 font-medium">
+                      <div class="mb-4 transition-colors hover:text-primary hover:cursor-pointer">
+                          <a href="assets/AegieVision - About the Product.mp4">About The Product</a>
+                      </div>
+                      <div class="mb-4 transition-colors hover:text-primary hover:cursor-pointer">
+                          <a href="#about-section">About The Team</a>
+                      </div>
+                      <div class="mb-4 transition-colors hover:text-primary hover:cursor-pointer">
+                          <a href="#how-it-works-section">How It Works</a>
+                      </div>
+                      <div class="mb-4 transition-colors hover:text-primary hover:cursor-pointer">
+                          <a href="#available-countries-section">Available Countries</a>
+                      </div>
+                  </div>
+                  <div class="md:col-span-1 font-medium">
+                      <div class="mb-4 transition-colors hover:text-primary hover:cursor-pointer">
+                          <a href="#reviews-section">Reviews</a>
+                      </div>
+                      <div class="mb-4 transition-colors hover:text-primary hover:cursor-pointer">
+                          <a href="#download-section">Downloads</a>
+                      </div>
+                      <div class="mb-4 transition-colors hover:text-primary hover:cursor-pointer">
+                          <a href="#become-favorer-section">Become a Favorer</a>
+                      </div>
+                      <div class="mb-4 transition-colors hover:text-primary hover:cursor-pointer">
+                          <a href="#">Terms and Conditions</a>
+                      </div>
+                  </div>
+                  <div class="md:col-span-1">
+                      <p class="mb-4">
+                          <span class="font-bold text-primary"> DOWNLOAD AEGIE VISION</span>
+                          <br />
+                          <span class="font-medium">
+            Available in Google Play Store, available soon on the App
+            Store.
+          </span>
+                          <span class="text-contrast underline" href="">Check for updates</span>
+                      </p>
+                      <a href="#">
+                          <img src="./assets/google-play-badge.png" alt="Google Play Store Badge"
+                               class="h-16 w-auto hover:scale-95 duration-200 py-2" />
+                      </a>
+                      <div class="mb-4 font-bold">Follow us!</div>
+                      <div class="flex space-x-4">
+                          <a href="#"><img class="h-8" src="./assets/facebook-logo.png" alt="Facebook" /></a>
+                          <a href="#"><img class="h-8" src="./assets/twitter-logo.png" alt="Twitter" /></a>
+                          <a href="#"><img class="h-8" src="./assets/instagram-logo.png" alt="Instagram" /></a>
+                          <a href="#"><img class="h-8" src="./assets/youtube-logo.png" alt="Youtube" /></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <p style="text-align: center;">&copy; 2024 <span class="font-bold text-white">Aegie Vision</span>. All rights reserved.</p>
+      </footer>
+
+  </main>
+  <script src="./scripts/navigation.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

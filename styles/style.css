@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Monserrat;
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf')format("truetype");
+    font-display: swap;
+  }
+
+  html {
+    font-family: "Monserrat", system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-filled {
+    @apply text-lg font-medium text-snow hover:cursor-pointer;
+    @apply bg-secondary px-8 py-2 rounded-full;
+    @apply hover:bg-primary duration-150
+  }
+  .btn-filled-no-hover {
+    @apply text-lg font-medium text-snow text-center justify-center hover:cursor-pointer;
+    @apply bg-secondary px-8 py-2 rounded-full items-center;
+  }
+}
+
+
+/*--------------header*/
+.header {|
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: linear-gradient(to right, #0056b3, #30f1d4, #003366); /* Azul, aqua, azul oscuro */
+  box-shadow: 0 4px 41px rgba(0, 0, 0, 0.14); /* Sombra más sutil */
+  transition: 0.2s;
+  padding: 10px 10%;
+  color: #ffffff; /* Color del texto en blanco para contraste */
+}
+
+.text-white:hover{
+  color: black;
+  cursor: pointer;
+}
+.header a {
+  color: black;
+  font-weight: 900;
+}
+
+.header a:hover {
+  text-decoration: none;
+}
+
+.nav__list a:hover{
+    background-color: #ffffff;
+    color:  #003366;
+    padding: 8px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.nav__link {
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.btn-filleds{
+  font-size: 22px;
+  padding: 5px;
+  color: #ffffff;
+  border: 2px solid white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+
+.home {
+  position: relative;
+  height: 100vh;
+  background-image: url('https://www.shutterstock.com/image-photo/close-cctv-camera-over-defocused-600nw-1680278365.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.home__container {
+  z-index: 1;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #ff0707 white;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dd0606;
+  border-radius: 10px;
+  border: 3px solid white;
+}
